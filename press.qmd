@@ -255,3 +255,19 @@ NIH: National Institute of Health
 :::
 :::
 :::
+
+## ONT - Flowcells
+
+![Valores teórico de capacidade de sequenciamento.](img/flowcells.png){fig-align="center"}
+
+## ONT - Princípio
+
+![[@wang2021]](img/ont_principle.png){fig-align="center"}
+
+## ONT - Princípio
+
+{{< video https://youtu.be/RcP85JHLmnI?si=tmBwQYEmgRZa34zA width="90%" height="80%">}}
+
+## ONT - Nanoporos
+
+![Lu, C., Bonini, A., Viel, J.H. et al. Toward single-molecule protein sequencing using nanopores. Nat Biotechnol 43, 312--322 (2025). [@Lu2025]](img/napores.png)

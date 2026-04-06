@@ -1,0 +1,13 @@
+// Definindo as configurações
+$titulo-cor: black;
+$sombra-cor: yellow;
+$deslocamento: 4px;
+
+h1 {
+  color: $titulo-cor;
+  // Note o valor negativo no segundo parâmetro para subir a sombra
+  text-shadow: $deslocamento (-$deslocamento) 0px $sombra-cor;
+  
+  font-size: 3rem;
+  text-transform: uppercase;
+}
