@@ -289,7 +289,174 @@ Marcel Ferreira
 <a href="https://giphy.com/gifs/pudgypenguins-rage-enough-ragequit-Cas0va26zqBvTO5vY9">via GIPHY</a>
 </p>
 </div></div>
+</section>
+<section id="bioinformática" class="slide level2">
+<h2>Bioinformática</h2>
+<ul>
+<li>NIH: “<em>Bioinformatics, as related to genetics and genomics, is a scientific subdiscipline that involves using computer technology to collect, store, analyze and disseminate biological data and information, such as DNA and amino acid sequences or annotations about those sequences.</em>”</li>
+</ul>
 
+<aside><div>
+<p>NIH: National Institute of Health</p>
+</div></aside></section>
+<section id="bioinformática-1" class="slide level2">
+<h2>Bioinformática</h2>
+<ul>
+<li>NIH: “<em>Bioinformatics, as related to <strong>genetics</strong> and <strong>genomics</strong>, is a scientific subdiscipline that involves using computer technology to <strong>collect</strong>, <strong>store</strong>, <strong>analyze</strong> and <strong>disseminate</strong> biological data and information, such as <strong>DNA</strong> and <strong>amino acid sequences</strong> or annotations about those sequences.</em>”</li>
+</ul>
+
+<aside><div>
+<p>NIH: National Institute of Health</p>
+</div></aside></section>
+<section id="bioinformática-2" class="slide level2">
+<h2>Bioinformática</h2>
+<ul>
+<li>Não vamos focar nos algoritmos;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Mas sim nos dados produzidos e como analisa-los;</li>
+</ul>
+</section></section>
+<section>
+<section id="sequenciamento-via-ont" class="title-slide slide level1 center">
+<h1>Sequenciamento via ONT</h1>
+
+</section>
+<section id="ordens-de-grandeza-do-genoma-humano" class="slide level2">
+<h2>Ordens de Grandeza do Genoma Humano</h2>
+<ul>
+<li><p>Número de cromossomos: 46 (23 pares);</p></li>
+<li><p>Tamanho do genoma haploide: ~3,2 bilhões de pares de bases (3,2 Gb);</p></li>
+<li><p>Número estimado de genes codificadores de proteínas: ~20.000;</p></li>
+</ul>
+</section>
+<section id="section" class="slide level2">
+<h2></h2>
+
+<img data-src="img/humanchr.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="por-que-sequenciar" class="slide level2">
+<h2>Por que sequenciar?</h2>
+<div class="fragment">
+<ul>
+<li><p>A sequência é a “receita” da vida</p>
+<ul>
+<li>Ela determina a estrutura e função das moléculas biológicas.</li>
+</ul></li>
+<li><p><strong>DNA</strong> → <strong>RNA</strong> → <strong>Proteína</strong></p>
+<ul>
+<li>Alterações na sequência podem afetar a função celular e causar doenças.</li>
+</ul></li>
+<li><p>Entender a sequência = entender o funcionamento dos organismos</p>
+<ul>
+<li>Do gene à característica observável (fenótipo).</li>
+</ul></li>
+<li><p>Permite identificar diferenças genéticas</p>
+<ul>
+<li>Entre indivíduos, espécies, populações ou células (ex: câncer).</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="geração-de-sequenciamento" class="slide level2">
+<h2>Geração de sequenciamento</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://pit.edu.vn/en/post/generations-of-gene-sequencing-technology-139.htm"><img data-src="img/seqgens.png"></a></p>
+<figcaption>https://pit.edu.vn/en/post/generations-of-gene-sequencing-technology-139.htm</figcaption>
+</figure>
+</div>
+</section>
+<section id="sequenciamento-comparativo-entre-plataformas" class="slide level2">
+<h2>Sequenciamento: Comparativo entre Plataformas</h2>
+<p><br></p>
+<div style="font-size:80%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 22%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Plataforma</strong></td>
+<td><strong>Tipo de Leitura</strong></td>
+<td><strong>Tamanho de Leitura</strong></td>
+<td><strong>Taxa de Erro</strong></td>
+<td><strong>Tempo de Execução</strong></td>
+<td><strong>Aplicações Comuns</strong></td>
+</tr>
+<tr class="even">
+<td>Illumina</td>
+<td>Short reads</td>
+<td>150–300 pares de bases</td>
+<td>&lt;1%</td>
+<td>1–2 dias</td>
+<td>RNA-seq, exoma, WGS, genotipagem</td>
+</tr>
+<tr class="odd">
+<td>PacBio Hifi</td>
+<td>Long reads (alta fidelidade)</td>
+<td>10–25 kb (HiFi)</td>
+<td>~1%</td>
+<td>1–2 dias</td>
+<td>Montagem genômica, haplótipos, variantes estruturais</td>
+</tr>
+<tr class="even">
+<td>Oxford Nanopre</td>
+<td>Long/ultralong reads</td>
+<td>10 kb – &gt;1 Mb</td>
+<td>5–10% (melhorando)</td>
+<td>Horas a 2 dias</td>
+<td>Metagenômica, epigenética, transcriptômica, forense</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="introdução-a-tecnologia-de-sequenciamento" class="slide level2">
+<h2>Introdução a tecnologia de sequenciamento</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.genome.gov/geneticsglossary/DNASequencing#:~:text=DNA%20sequencing%20refers%20to%20the,use%20to%20develop%20and%20operate."><img data-src="img/seqmethods.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<figcaption>https://www.genome.gov/geneticsglossary/DNASequencing#:~:text=DNA%20sequencing%20refers%20to%20the,use%20to%20develop%20and%20operate.</figcaption>
+</figure>
+</div>
+</section>
+<section id="oxford-nanopore-technologies-ont" class="slide level2">
+<h2>Oxford nanopore technologies (ONT)</h2>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-left">
+<figure>
+<p><img data-src="img/equipaments.png" class="quarto-figure quarto-figure-left"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div style="font-size: 80%;">
+<ul>
+<li><p>Portátil e escalável;</p></li>
+<li><p>“Barato”;</p></li>
+<li><p>Aquisição de dados em tempo real;</p></li>
+<li><p>Altos volumes de dados (fastq &gt; 50 Gb);</p></li>
+<li><p>DNA* e RNA*;</p></li>
+<li><p>Long reads (10 kb – 100 Kb);</p></li>
+<li><p>Ultra (100 Kb – 300 Kb);</p></li>
+<li><p>Recorde 4 Mb!!!!!!;</p></li>
+<li><p>Acurácia atual de &gt;99%;</p></li>
+</ul>
+</div>
+</div></div>
+
+</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">

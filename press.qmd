@@ -168,3 +168,90 @@ NIH: National Institute of Health
 <br>
 
 -   Mas sim nos dados produzidos e como analisa-los;
+
+# Sequenciamento via ONT
+
+## Ordens de Grandeza do Genoma Humano
+
+-   Número de cromossomos: 46 (23 pares);
+
+-   Tamanho do genoma haploide: \~3,2 bilhões de pares de bases (3,2 Gb);
+
+-   Número estimado de genes codificadores de proteínas: \~20.000;
+
+## 
+
+![](img/humanchr.png){fig-align="center"}
+
+## Por que sequenciar?
+
+. . .
+
+-   A sequência é a "receita" da vida
+
+    -   Ela determina a estrutura e função das moléculas biológicas.
+
+-   **DNA** → **RNA** → **Proteína**
+
+    -   Alterações na sequência podem afetar a função celular e causar doenças.
+
+-   Entender a sequência = entender o funcionamento dos organismos
+
+    -   Do gene à característica observável (fenótipo).
+
+-   Permite identificar diferenças genéticas
+
+    -   Entre indivíduos, espécies, populações ou células (ex: câncer).
+
+## Geração de sequenciamento
+
+[![https://pit.edu.vn/en/post/generations-of-gene-sequencing-technology-139.htm](img/seqgens.png)](https://pit.edu.vn/en/post/generations-of-gene-sequencing-technology-139.htm)
+
+## Sequenciamento: Comparativo entre Plataformas
+
+<br>
+
+::: {style="font-size:80%;"}
+|                |                              |                         |                     |                       |                                                      |
+|-----------|-----------|-----------|-----------|-----------|----------------|
+| **Plataforma** | **Tipo de Leitura**          | **Tamanho de Leitura**  | **Taxa de Erro**    | **Tempo de Execução** | **Aplicações Comuns**                                |
+| Illumina       | Short reads                  | 150--300 pares de bases | \<1%                | 1--2 dias             | RNA-seq, exoma, WGS, genotipagem                     |
+| PacBio Hifi    | Long reads (alta fidelidade) | 10--25 kb (HiFi)        | \~1%                | 1--2 dias             | Montagem genômica, haplótipos, variantes estruturais |
+| Oxford Nanopre | Long/ultralong reads         | 10 kb -- \>1 Mb         | 5--10% (melhorando) | Horas a 2 dias        | Metagenômica, epigenética, transcriptômica, forense  |
+:::
+
+## Introdução a tecnologia de sequenciamento
+
+[![https://www.genome.gov/geneticsglossary/DNASequencing#:\~:text=DNA%20sequencing%20refers%20to%20the,use%20to%20develop%20and%20operate.](img/seqmethods.png){fig-align="center"}](https://www.genome.gov/geneticsglossary/DNASequencing#:~:text=DNA%20sequencing%20refers%20to%20the,use%20to%20develop%20and%20operate.)
+
+## Oxford nanopore technologies (ONT)
+
+. . .
+
+::: columns
+::: {.column width="50%"}
+![](img/equipaments.png){fig-align="left"}
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 80%;"}
+-   Portátil e escalável;
+
+-   "Barato";
+
+-   Aquisição de dados em tempo real;
+
+-   Altos volumes de dados (fastq \> 50 Gb);
+
+-   DNA\* e RNA\*;
+
+-   Long reads (10 kb -- 100 Kb);
+
+-   Ultra (100 Kb -- 300 Kb);
+
+-   Recorde 4 Mb!!!!!!;
+
+-   Acurácia atual de \>99%;
+:::
+:::
+:::
