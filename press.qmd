@@ -271,3 +271,119 @@ NIH: National Institute of Health
 ## ONT - Nanoporos
 
 ![Lu, C., Bonini, A., Viel, J.H. et al. Toward single-molecule protein sequencing using nanopores. Nat Biotechnol 43, 312--322 (2025). [@Lu2025]](img/napores.png)
+
+## ONT - Tipos de leitura
+
+[![Duplex.](img/duplex.webp){fig-align="center" width="900"}](https://nanoporetech.com/document/kit-14-device-and-informatics)
+
+## ONT - Tipos de leitura
+
+-   `Simplex`: O sequenciamento de uma única fita. A fita de DNA modelo passa pelo nanoporo e é submetida ao basecalling. Isso é realizado no MinKNOW.
+
+-   `Duplex`: O sequenciamento de ambas as fitas. A fita complementar é lida imediatamente após a fita modelo e o basecalling consensual para ambas as fitas leva a um aumento ainda maior na precisão. Isso é realizado no Dorado.
+
+::: aside
+MinKNOW é o software que controla o sequenciamento.
+:::
+
+
+## ONT - Leitura da fita
+
+::: columns
+::: {.column width="50%"}
+![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 80%"}
+:::
+:::
+:::
+
+## ONT - Leitura da fita
+
+::: columns
+::: {.column width="50%"}
+![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 80%"}
+-   Leitura DNA = 400 bp por segundo;
+
+-   RNA = 70 bp por segundo;
+
+-   6 bases simultâneas por poro;
+
+-   {A,T,C,G};
+:::
+:::
+:::
+
+## ONT - Leitura da fita
+
+::: columns
+::: {.column width="50%"}
+![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 80%"}
+-   Leitura DNA = 400 bp por segundo;
+
+-   RNA = 70 bp por segundo;
+
+-   6 bases simultâneas por poro;
+
+-   {A,T,C,G};
+
+<br>
+
+-   4x4x4x4x4x4 =?
+:::
+:::
+:::
+
+## ONT - Leitura da fita
+
+::: columns
+::: {.column width="50%"}
+![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
+:::
+
+::: {.column width="50%"}
+::: {style="font-size: 80%"}
+-   Leitura DNA = 400 bp por segundo;
+
+-   RNA = 70 bp por segundo;
+
+-   6 bases simultâneas por poro;
+
+-   {A,T,C,G};
+
+<br>
+
+-   4x4x4x4x4x4 =?
+
+<br>
+
+-   4096 combinações!
+:::
+:::
+:::
+
+## ONT - Leitura da fita
+
+::: center
+[![Modelos de poros tem dois centros de leitura.](https://a.storyblok.com/f/196663/5384x5511/5d1ab2a959/different-types-of-nanopore.png){width="488"}](https://nanoporetech.com/platform/technology/basecalling)
+:::
+
+## ONT - RNA
+
+![](img/rna.png){fig-align="center" width="1300"}
+
+## Modificações no DNA
+
+. . .
+
+![https://www.nature.com/articles/s41587-021-01108-x](img/ont_prinmods.png){fig-align="center" width="806"}
