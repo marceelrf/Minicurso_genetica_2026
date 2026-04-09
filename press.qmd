@@ -15,7 +15,6 @@ format:
     width: 1500
     page-layout: full
     reference-location: document
-    chalkboard: true
     footer: "marcel.ferreira@unesp.br"
     logo: "img/wb_logo.png"
     pointer:
@@ -28,6 +27,7 @@ lang: pt-BR
 slide-number: c/t
 bibliography: references.bib
 engine: knitr
+embed-resources: true
 ---
 
 # Sobre mim
@@ -488,7 +488,7 @@ Sugestão de leitura:
 
 ## Bancada - Controle de qualidade
 
-![](img/dna_qc.png){width="1200"}
+![](img/dna_qc.png){fig-align="center" width="1200"}
 
 ::: aside
 Agilent Femto Pulse (for fragments \>10 kb), or the Agilent Bioanalyzer (for fragments \<10 kb)
@@ -598,6 +598,12 @@ Agilent Femto Pulse (for fragments \>10 kb), or the Agilent Bioanalyzer (for fra
 
 ## Potencial - Variantes estruturais
 
+![](img/oca2_longshort%20(1).png){fig-align="center" width="1250"}
+
+## Potencial - Variantes estruturais
+
+![](img/sv_02.png){fig-align="center" width="571"}
+
 ## Potencial - metilação
 
 ![Metilação ao longo do gene MYEF2.](img/hapmet.png){fig-align="center" width="500"}
@@ -635,7 +641,9 @@ $$
 
 </iframe>
 
-`<p><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA"`{=html}via GIPHY</a></p>
+`<p><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA"`{=html}via GIPHY</a>
+
+</p>
 :::
 
 ## EPI2ME
@@ -669,19 +677,111 @@ $$
 
 </iframe>
 
-`<p><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj"`{=html}via GIPHY</a></p>
+<p><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj">via GIPHY</a></p>
 :::
 
 ## Desafios (e frustrações)..
 
-[![Ryan Wick](https://avatars.githubusercontent.com/u/7053555?v=4){width="418"}](https://github.com/rrwick)
+::::: columns
+::: {.column width="50%"}
+![Ryan Wick - Bioinformata](https://avatars.githubusercontent.com/u/7053555?v=4){fig-align="center"}
+:::
 
+::: {.column width="50%"}
 "May 2025 update
 
-I've recently heard that ONT is deprecating duplex basecalling -- not surprising given their recent silence on the topic. This is now the third time (after 2D and 1D2) that ONT has tried and dropped both-strand basecalling! So it seems that mixed simplex-duplex read sets like the ones in this post will end up a historical curiosity rather than a standard part of ONT sequencing." \[[link](https://rrwick.github.io/2024/05/08/duplex_assemblies.html)\]
+I've recently heard that ONT is deprecating duplex basecalling -- not surprising given their recent silence on the topic. This is now the third time (after 2D and 1D2) that ONT has tried and dropped both-strand basecalling! So it seems that mixed simplex-duplex read sets like the ones in this post will end up a historical curiosity rather than a standard part of ONT sequencing." [link](https://rrwick.github.io/2024/05/08/duplex_assemblies.html)
+:::
+:::::
 
 ## O que eu preciso saber para começar?
 
+::::: columns
+::: {.column width="50%"}
+<iframe src="https://giphy.com/embed/nf9OAG4MUPbsOUDtu4" width="480" height="346" style frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+<p><a href="https://giphy.com/gifs/fallontonight-jimmy-fallon-writing-clipboard-nf9OAG4MUPbsOUDtu4">via GIPHY</a></p>
+:::
+
+::: {.column width="50%"}
+<iframe src="https://giphy.com/embed/XIqCQx02E1U9W" width="480" height="269" style frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+<p><a href="https://giphy.com/gifs/XIqCQx02E1U9W">via GIPHY</a></p>
+:::
+:::::
+
+## O que eu preciso saber para começar?
+
+. . .
+
+-   
+
+    > Você estará trabalhando com algo relativamente novo!
+
+. . .
+
+-   A tecnologia parece estar atingindo uma estabilidade no seu desenvolvimento;
+
+. . .
+
+-   Ainda é nichada;
+
+. . .
+
+-   Algumas aplicações ainda não estão padronizadas;
+
+. . .
+
+-   Você irá gerar um ALTÍSSIMO volume de dados;
+
 ## Quais os principais custos?
 
+. . .
+
+-   Coleta e extração de DNA 💸💸;
+
+. . .
+
+-   Reagentes para sequenciamento 💸💸💸;
+
+. . .
+
+-   Computador para análises 💸💸💸💸💸;
+
+. . .
+
+-   Custo inesperado: Armazenar os dados 💸-💸💸💸;
+
 ## Que tipo de computador usar?
+
+Métodos convencionais:
+
+-   Placa de vídeo boa!
+
+-   Memória RAM (\>= 64 Gb);
+
+-   Processador com multíplas threads (\>20);
+
+-   Muito armazenamento em SSD (\>10 Tb);
+
+## Termometro de aplicações
+
+. . .
+
+![](img/termometronanopore.png){fig-align="center" width="1300"}
+
+## Agradecimentos
+
+![](img/thanks01.png){fig-align="center" width="1350"}
+
+## Agradecimentos
+
+<br>
+
+![](img/thanks02.png){fig-align="center" width="1420"}
+
+## Referências
