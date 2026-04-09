@@ -3,6 +3,10 @@ title: "Sequenciamento de terceira geração via Oxford Nanopore: quando o taman
 subtitle: "Workshop de Genética"
 author: "Marcel Ferreira"
 date: today
+title-slide-attributes:
+  data-background-image: img/wb_logo.png
+  data-background-size: contain
+  data-background-opacity: "0.10"
 format:
   revealjs:
     theme: simple
@@ -22,6 +26,7 @@ revealjs-plugins:
 editor: visual
 lang: pt-BR
 slide-number: c/t
+bibliography: references.bib
 engine: knitr
 ---
 
@@ -29,7 +34,7 @@ engine: knitr
 
 ## Muito prazer..
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 ![Olar!](img/marshall.jpg){fig-align="center" width="420"}
 :::
@@ -49,16 +54,16 @@ engine: knitr
 
 -   Desde 2023, pós-doutorado em genética;
 :::
-:::
+:::::
 
 ## Interesses
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 ![Olar!](img/marshall.jpg){fig-align="center" width="420"}
 :::
 
-::: {.column width="50%" style="font-size: 80%;"}
+:::: {.column width="50%" style="font-size: 80%;"}
 -   Métodos alternativos ao uso de animais;
 
 -   Identificão humana via DNA;
@@ -76,8 +81,8 @@ engine: knitr
 ::: {#red-highlight style="color: red; font-size: 140%; text-align: center; font-weight: bold;"}
 Bioinformática
 :::
-:::
-:::
+::::
+::::::
 
 ## Projeto
 
@@ -107,27 +112,13 @@ Bioinformática
 
 # Sobre esse minicurso
 
-## Primeira edição (de muitas...🙏)
-
--   Desde maio estou como colaborador no programa de Genética do IBB;
-
-<br>
-
--   Infelizmente não terá pratica;
-
-<br>
-
--   Vamos aprofundar sobre aspectos de bioinformática das análises;
-
-<br>
-
 ## Método do ano de 2022
 
 [![Publicado na Nature:](img/methodoftheyear.png){fig-align="center" width="516"}](https://www.nature.com/articles/s41592-022-01730-w)
 
 ## Passar os atalhos
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
 <iframe src="https://giphy.com/embed/1n833bZxdzKzaErLe9" width="480" height="269" style frameBorder="0" class="giphy-embed" allowFullScreen>
 
@@ -143,7 +134,7 @@ Bioinformática
 
 <p><a href="https://giphy.com/gifs/pudgypenguins-rage-enough-ragequit-Cas0va26zqBvTO5vY9">via GIPHY</a></p>
 :::
-:::
+:::::
 
 ## Bioinformática
 
@@ -212,12 +203,12 @@ NIH: National Institute of Health
 <br>
 
 ::: {style="font-size:80%;"}
-|                |                              |                         |                     |                       |                                                      |
-|-----------|-----------|-----------|-----------|-----------|----------------|
-| **Plataforma** | **Tipo de Leitura**          | **Tamanho de Leitura**  | **Taxa de Erro**    | **Tempo de Execução** | **Aplicações Comuns**                                |
-| Illumina       | Short reads                  | 150--300 pares de bases | \<1%                | 1--2 dias             | RNA-seq, exoma, WGS, genotipagem                     |
-| PacBio Hifi    | Long reads (alta fidelidade) | 10--25 kb (HiFi)        | \~1%                | 1--2 dias             | Montagem genômica, haplótipos, variantes estruturais |
-| Oxford Nanopre | Long/ultralong reads         | 10 kb -- \>1 Mb         | 5--10% (melhorando) | Horas a 2 dias        | Metagenômica, epigenética, transcriptômica, forense  |
+|  |  |  |  |  |  |
+|------------|------------|------------|------------|------------|------------|
+| **Plataforma** | **Tipo de Leitura** | **Tamanho de Leitura** | **Taxa de Erro** | **Tempo de Execução** | **Aplicações Comuns** |
+| Illumina | Short reads | 150--300 pares de bases | \<1% | 1--2 dias | RNA-seq, exoma, WGS, genotipagem |
+| PacBio Hifi | Long reads (alta fidelidade) | 10--25 kb (HiFi) | \~1% | 1--2 dias | Montagem genômica, haplótipos, variantes estruturais |
+| Oxford Nanopre | Long/ultralong reads | 10 kb -- \>1 Mb | 5--10% (melhorando) | Horas a 2 dias | Metagenômica, epigenética, transcriptômica, forense |
 :::
 
 ## Introdução a tecnologia de sequenciamento
@@ -228,12 +219,12 @@ NIH: National Institute of Health
 
 . . .
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 ![](img/equipaments.png){fig-align="left"}
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 80%;"}
 -   Portátil e escalável;
 
@@ -253,8 +244,8 @@ NIH: National Institute of Health
 
 -   Acurácia atual de \>99%;
 :::
-:::
-:::
+::::
+::::::
 
 ## ONT - Flowcells
 
@@ -286,28 +277,27 @@ NIH: National Institute of Health
 MinKNOW é o software que controla o sequenciamento.
 :::
 
-
 ## ONT - Leitura da fita
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 ![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 80%"}
 :::
-:::
-:::
+::::
+::::::
 
 ## ONT - Leitura da fita
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 ![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 80%"}
 -   Leitura DNA = 400 bp por segundo;
 
@@ -317,17 +307,17 @@ MinKNOW é o software que controla o sequenciamento.
 
 -   {A,T,C,G};
 :::
-:::
-:::
+::::
+::::::
 
 ## ONT - Leitura da fita
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 ![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 80%"}
 -   Leitura DNA = 400 bp por segundo;
 
@@ -341,17 +331,17 @@ MinKNOW é o software que controla o sequenciamento.
 
 -   4x4x4x4x4x4 =?
 :::
-:::
-:::
+::::
+::::::
 
 ## ONT - Leitura da fita
 
-::: columns
+:::::: columns
 ::: {.column width="50%"}
 ![Sutton, M.A., Burton, A.S., Zaikova, E. et al. Radiation Tolerance of Nanopore Sequencing Technology for Life Detection on Mars and Europa. Sci Rep 9, 5370 (2019). https://doi.org/10.1038/s41598-019-41488-4](img/leituradafita.png)
 :::
 
-::: {.column width="50%"}
+:::: {.column width="50%"}
 ::: {style="font-size: 80%"}
 -   Leitura DNA = 400 bp por segundo;
 
@@ -369,8 +359,8 @@ MinKNOW é o software que controla o sequenciamento.
 
 -   4096 combinações!
 :::
-:::
-:::
+::::
+::::::
 
 ## ONT - Leitura da fita
 
@@ -382,8 +372,316 @@ MinKNOW é o software que controla o sequenciamento.
 
 ![](img/rna.png){fig-align="center" width="1300"}
 
-## Modificações no DNA
+## ONT - RNA
+
+![https://doi.org/10.1101/2019.12.18.880849](img/F1.large.jpg){fig-align="center" width="1300"}
+
+## Modificações de bases
 
 . . .
 
 ![https://www.nature.com/articles/s41587-021-01108-x](img/ont_prinmods.png){fig-align="center" width="806"}
+
+## Modificações de bases
+
+-   Existem cerca de 30 modificações de base descrita!
+
+. . .
+
+::::: columns
+::: {.column width="50%"}
+{A, T, C, G, 5mC}
+:::
+
+::: {.column width="50%"}
+{A, T, C, G, 5mC, 5hmC}
+:::
+:::::
+
+## Modificações de bases
+
+-   Existem cerca de 30 modificações de base descrita!
+
+::::: columns
+::: {.column width="50%"}
+{A, T, C, G, 5mC}
+
+<br>
+
+5x5x5x5x5x5 = 15625 combinações!
+:::
+
+::: {.column width="50%"}
+{A, T, C, G, 5mC, 5hmC}
+
+<br>
+
+6x6x6x6x6x6 = 46656 combinações!
+:::
+:::::
+
+## Basecallers
+
+![Basecalling.](img/ont_geral.png){fig-align="center" width="1200"}
+
+## Basecallers
+
+-   Nanoporos diferentes contêm "leitores" diferentes;
+
+    -   R10.4.1 é o modelo atual;
+
+-   Capturam o sinal elétrico (POD5);
+
+-   Basecallers transformam POD5 em FASTQ;
+
+-   Utilizam Machine Learning (RNN);
+
+-   Este processo pode ser feito em tempo real;
+
+::: aside
+POD5 é o formato atual, mas pode-se encontrar FAST5;
+:::
+
+## Basecallers
+
+[![Como funcionam](https://a.storyblok.com/f/196663/809x716/e4743867e2/neural-networks.png){fig-align="center" width="565"}](https://nanoporetech.com/platform/technology/basecalling)
+
+## Basecallers
+
+[![Evolução dos modelos.](https://a.storyblok.com/f/196663/2326x960/ae453e7f75/basecallers-timeline.png){fig-align="center" width="1200"}](https://nanoporetech.com/platform/technology/basecalling)
+
+## Basecallers
+
+Sugestão de leitura:
+
+-   *"**From squiggle to basepair: computational approaches for improving nanopore sequencing read accuracy**"* [@rang2018]\[[link](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1462-9)\]
+
+## Bancada
+
+. . .
+
+-   hmwDNA;
+
+. . .
+
+-   Alta pureza;
+
+. . .
+
+-   Não há necessidade de PCR;
+
+. . .
+
+-   Não há necessidade conversões por bissulfito de sódio (e afins);
+
+## Bancada - Extração
+
+-   Parte crucial!
+
+<br>
+
+-   Vale o investimento;
+
+<br>
+
+-   Vários kits de extração já foram validados pela comunidade;
+
+## Bancada - Controle de qualidade
+
+![](img/dna_qc.png){width="1200"}
+
+::: aside
+Agilent Femto Pulse (for fragments \>10 kb), or the Agilent Bioanalyzer (for fragments \<10 kb)
+:::
+
+## Enriquecimento do sequenciamento
+
+-   Você não precisa sequenciar o genoma completo necessariamente!
+
+. . .
+
+::: {style="text-align: center;"}
+<iframe src="https://giphy.com/embed/XR9Dp54ZC4dji" width="480" height="288" style frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+<p><a href="https://giphy.com/gifs/mrw-thanks-server-XR9Dp54ZC4dji">via GIPHY</a></p>
+:::
+
+## Enriquecimento do sequenciamento
+
+. . .
+
+-   ***Target***;
+
+. . .
+
+-   ***CRISPR-Cas9***;
+
+. . .
+
+-   ***Adaptive sampling***;
+
+## Enriquecimento do sequenciamento
+
+[![Estratégias de enriquecimento de ONT](img/enrichment3.png){fig-align="center" width="1200"}](https://www.sciencedirect.com/science/article/pii/S1872497324001522)
+
+## CRISPR-Cas9
+
+![https://nanoporetech.com/document/targeted-amplification-free-dna-sequencing-using-crispr-cas](img/a.storyblok.webp){fig-align="center" width="950"}
+
+## CRISPR-Cas9
+
+-   **Excision**;
+
+-   **Single cut and read out;**
+
+-   **Tiling;**
+
+## CRISPR-Cas9
+
+![](img/cas9_types.webp){fig-align="center"}
+
+## CRISPR-Cas9
+
+![](img/cas9_choose.webp){fig-align="center"}
+
+## CRISPR-Cas9
+
+![](img/chopchop.png){fig-align="center"}
+
+## Adaptive sampling
+
+![https://nanoporetech.com/document/adaptive-sampling](img/1000x0.webp){fig-align="center" width="1200"}
+
+## Adaptive sampling
+
+-   Enriquecimento das ROI \~5 a 10 vezes;
+
+-   Ideal é que a fração enriquecida seja inferior 10% do genoma (320 Mb);
+
+. . .
+
+-   Cuidados: ***Ocupação dos poros*** e ***fragmentação da biblioteca***;
+
+. . .
+
+-   As regiões escolhidas são colocadas em um arquivo BED;
+
+-   É necessário um computador com maior capacidade;
+
+## Potencial
+
+## Potencial - montagem de genomas
+
+![<https://www.phgfoundation.org/briefing/clinical-long-read-sequencing>](img/montagemdegenomas.png){fig-align="center" width="1000"}
+
+## Potencial - montagem de genomas
+
+[![Montagem completa do genoma humano.](img/completehumangenome.png){fig-align="center" width="596"}](https://www.science.org/doi/10.1126/science.abj6987)
+
+::: aside
+[@nurk2022]
+:::
+
+## Potencial - montagem de genomas
+
+[![Aumento de bases no genoma.](img/completehumangenome_2.png){fig-align="center" width="393"}](https://www.science.org/cms/10.1126/science.abj6987/asset/ec796ff1-289e-43cf-a065-ec6573199a8d/assets/images/large/science.abj6987-f1.jpg)
+
+## Potencial - haplótipos longos
+
+![Determinar haplótipos longos](img/longhap.png){fig-align="center" width="1200"}
+
+## Potencial - haplótipos longos
+
+[![Haplótipos do pai e da mãe.](img/pecat.webp){fig-align="center" width="797"}](https://www.nature.com/articles/s41467-024-47349-7/figures/4)
+
+## Potencial - Variantes estruturais
+
+## Potencial - metilação
+
+![Metilação ao longo do gene MYEF2.](img/hapmet.png){fig-align="center" width="500"}
+
+## Potencial - outros
+
+-   STR [@luo2024];
+
+<br>
+
+-   Elementos transponíveis [@smits2022];
+
+<br>
+
+-   Epitranscriptômica [@Workman2019; @Begik2022; @Jain2022];
+
+## Estado atual
+
+[![Sequenciamento de DNA](https://a.storyblok.com/f/196663/10800x3600/86aa012b7e/20250613_dna_q-1.png){fig-align="center" width="1200"}](https://nanoporetech.com/platform/accuracy)
+
+$$
+P = 10^{\frac{-Q}{10}}
+$$
+
+## Estado atual
+
+[![Metilação.](https://a.storyblok.com/f/196663/1158x952/4cc71d5637/base-modification-section-graph_mod.jpg){fig-align="center" width="608"}](https://nanoporetech.com/platform/accuracy)
+
+## EPI2ME
+
+::: {style="text-align: center;"}
+> Quem tem medo de programação?
+
+<iframe src="https://giphy.com/embed/Df1O9eIsMFASA" width="480" height="324" style frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+`<p><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA"`{=html}via GIPHY</a></p>
+:::
+
+## EPI2ME
+
+::::: columns
+::: {.column width="50%"}
+-   [EPI2ME](https://epi2me.nanoporetech.com/wfindex/) é uma coleção de pipelines fornecidos pela própria ONT;
+
+-   Nextflow;
+
+-   Útil para quem quer ou não programar;
+:::
+
+::: {.column width="50%"}
+[![](https://epi2me.nanoporetech.com/static/dbb47454a74ffdac6ab079de768cc8af/3421a/logo-dark.webp){fig-align="center" width="450"}](https://epi2me.nanoporetech.com/wfindex/)
+:::
+:::::
+
+## Futuro da tecnologia
+
+[![Lu, C., Bonini, A., Viel, J.H. et al. Toward single-molecule protein sequencing using nanopores. Nat Biotechnol 43, 312--322 (2025). https://doi.org/10.1038/s41587-025-02587-y](img/protein.png){fig-align="center"}](https://www.nature.com/articles/s41587-025-02587-y#citeas)
+
+## Futuro da tecnologia
+
+[![https://comics.dcv.fct.unl.pt/resources/](img/multiomics.png){fig-align="center"}](https://comics.dcv.fct.unl.pt/resources/)
+
+## Desafios (e frustrações)..
+
+::: {style="text-align: center;"}
+<iframe src="https://giphy.com/embed/2zdVnqmhSfAvyQhzHj" width="480" height="480" style frameBorder="0" class="giphy-embed" allowFullScreen>
+
+</iframe>
+
+`<p><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj"`{=html}via GIPHY</a></p>
+:::
+
+## Desafios (e frustrações)..
+
+[![Ryan Wick](https://avatars.githubusercontent.com/u/7053555?v=4){width="418"}](https://github.com/rrwick)
+
+"May 2025 update
+
+I've recently heard that ONT is deprecating duplex basecalling -- not surprising given their recent silence on the topic. This is now the third time (after 2D and 1D2) that ONT has tried and dropped both-strand basecalling! So it seems that mixed simplex-duplex read sets like the ones in this post will end up a historical curiosity rather than a standard part of ONT sequencing." \[[link](https://rrwick.github.io/2024/05/08/duplex_assemblies.html)\]
+
+## O que eu preciso saber para começar?
+
+## Quais os principais custos?
+
+## Que tipo de computador usar?

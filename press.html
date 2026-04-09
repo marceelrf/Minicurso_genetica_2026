@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.8.26">
 
   <meta name="author" content="Marcel Ferreira">
-  <meta name="dcterms.date" content="2026-04-06">
+  <meta name="dcterms.date" content="2026-04-08">
   <title>Sequenciamento de terceira geração via Oxford Nanopore: quando o tamanho realmente importa?</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +29,27 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="press_files/libs/revealjs/dist/theme/quarto-0fde88a82f0356838740f155f1088782.css">
   <link href="press_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="press_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -130,7 +150,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="img/wb_logo.png" data-background-opacity="0.10" data-background-size="contain" class="quarto-title-block center">
   <h1 class="title">Sequenciamento de terceira geração via Oxford Nanopore: quando o tamanho realmente importa?</h1>
   <p class="subtitle">Workshop de Genética</p>
 
@@ -142,7 +162,7 @@ Marcel Ferreira
 </div>
 </div>
 
-  <p class="date">2026-04-06</p>
+  <p class="date">2026-04-08</p>
 </section>
 <section>
 <section id="sobre-mim" class="title-slide slide level1 center">
@@ -244,21 +264,6 @@ Marcel Ferreira
 <section id="sobre-esse-minicurso" class="title-slide slide level1 center">
 <h1>Sobre esse minicurso</h1>
 
-</section>
-<section id="primeira-edição-de-muitas" class="slide level2">
-<h2>Primeira edição (de muitas…🙏)</h2>
-<ul>
-<li>Desde maio estou como colaborador no programa de Genética do IBB;</li>
-</ul>
-<p><br></p>
-<ul>
-<li>Infelizmente não terá pratica;</li>
-</ul>
-<p><br></p>
-<ul>
-<li>Vamos aprofundar sobre aspectos de bioinformática das análises;</li>
-</ul>
-<p><br></p>
 </section>
 <section id="método-do-ano-de-2022" class="slide level2">
 <h2>Método do ano de 2022</h2>
@@ -371,14 +376,14 @@ Marcel Ferreira
 <h2>Sequenciamento: Comparativo entre Plataformas</h2>
 <p><br></p>
 <div style="font-size:80%;">
-<table class="caption-top">
+<table class="caption-top" style="width:100%;">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 22%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -464,7 +469,7 @@ Marcel Ferreira
 <section id="ont---princípio" class="slide level2">
 <h2>ONT - Princípio</h2>
 
-<img data-src="img/ont_principle.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="wang2021">[@wang2021]</span></p></section>
+<img data-src="img/ont_principle.png" class="r-stretch quarto-figure-center"><p class="caption"><span class="citation" data-cites="wang2021">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Wang et al. 2021</a>)</span></p></section>
 <section id="ont---princípio-1" class="slide level2">
 <h2>ONT - Princípio</h2>
 <iframe data-external="1" src="https://www.youtube.com/embed/RcP85JHLmnI?si=tmBwQYEmgRZa34zA" width="90%" height="80%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
@@ -472,7 +477,7 @@ Marcel Ferreira
 <section id="ont---nanoporos" class="slide level2">
 <h2>ONT - Nanoporos</h2>
 
-<img data-src="img/napores.png" class="r-stretch quarto-figure-center"><p class="caption">Lu, C., Bonini, A., Viel, J.H.&nbsp;et al.&nbsp;Toward single-molecule protein sequencing using nanopores.&nbsp;Nat Biotechnol&nbsp;43, 312–322 (2025). <span class="citation" data-cites="Lu2025">[@Lu2025]</span></p></section>
+<img data-src="img/napores.png" class="r-stretch quarto-figure-center"><p class="caption">Lu, C., Bonini, A., Viel, J.H.&nbsp;et al.&nbsp;Toward single-molecule protein sequencing using nanopores.&nbsp;Nat Biotechnol&nbsp;43, 312–322 (2025). <span class="citation" data-cites="Lu2025">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Lu et al. 2025</a>)</span></p></section>
 <section id="ont---tipos-de-leitura" class="slide level2">
 <h2>ONT - Tipos de leitura</h2>
 <div class="quarto-figure quarto-figure-center">
@@ -602,8 +607,12 @@ Marcel Ferreira
 <h2>ONT - RNA</h2>
 
 <img data-src="img/rna.png" class="quarto-figure quarto-figure-center r-stretch" width="1300"></section>
-<section id="modificações-no-dna" class="slide level2">
-<h2>Modificações no DNA</h2>
+<section id="ont---rna-1" class="slide level2">
+<h2>ONT - RNA</h2>
+
+<img data-src="img/F1.large.jpg" width="1300" class="r-stretch quarto-figure-center"><p class="caption">https://doi.org/10.1101/2019.12.18.880849</p></section>
+<section id="modificações-de-bases" class="slide level2">
+<h2>Modificações de bases</h2>
 <div class="fragment">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -611,7 +620,442 @@ Marcel Ferreira
 <figcaption>https://www.nature.com/articles/s41587-021-01108-x</figcaption>
 </figure>
 </div>
+</div>
+</section>
+<section id="modificações-de-bases-1" class="slide level2">
+<h2>Modificações de bases</h2>
+<ul>
+<li>Existem cerca de 30 modificações de base descrita!</li>
+</ul>
+<div class="fragment">
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>{A, T, C, G, 5mC}</p>
+</div><div class="column" style="width:50%;">
+<p>{A, T, C, G, 5mC, 5hmC}</p>
+</div></div>
+</div>
+</section>
+<section id="modificações-de-bases-2" class="slide level2">
+<h2>Modificações de bases</h2>
+<ul>
+<li>Existem cerca de 30 modificações de base descrita!</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>{A, T, C, G, 5mC}</p>
+<p><br></p>
+<p>5x5x5x5x5x5 = 15625 combinações!</p>
+</div><div class="column" style="width:50%;">
+<p>{A, T, C, G, 5mC, 5hmC}</p>
+<p><br></p>
+<p>6x6x6x6x6x6 = 46656 combinações!</p>
+</div></div>
+</section>
+<section id="basecallers" class="slide level2">
+<h2>Basecallers</h2>
 
+<img data-src="img/ont_geral.png" width="1200" class="r-stretch quarto-figure-center"><p class="caption">Basecalling.</p></section>
+<section id="basecallers-1" class="slide level2">
+<h2>Basecallers</h2>
+<ul>
+<li><p>Nanoporos diferentes contêm “leitores” diferentes;</p>
+<ul>
+<li>R10.4.1 é o modelo atual;</li>
+</ul></li>
+<li><p>Capturam o sinal elétrico (POD5);</p></li>
+<li><p>Basecallers transformam POD5 em FASTQ;</p></li>
+<li><p>Utilizam Machine Learning (RNN);</p></li>
+<li><p>Este processo pode ser feito em tempo real;</p></li>
+</ul>
+
+<aside><div>
+<p>POD5 é o formato atual, mas pode-se encontrar FAST5;</p>
+</div></aside></section>
+<section id="basecallers-2" class="slide level2">
+<h2>Basecallers</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://nanoporetech.com/platform/technology/basecalling"><img data-src="https://a.storyblok.com/f/196663/809x716/e4743867e2/neural-networks.png" class="quarto-figure quarto-figure-center" width="565"></a></p>
+</figure>
+</div>
+<figcaption>Como funcionam</figcaption>
+</figure>
+</div>
+</section>
+<section id="basecallers-3" class="slide level2">
+<h2>Basecallers</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://nanoporetech.com/platform/technology/basecalling"><img data-src="https://a.storyblok.com/f/196663/2326x960/ae453e7f75/basecallers-timeline.png" class="quarto-figure quarto-figure-center" width="1200"></a></p>
+</figure>
+</div>
+<figcaption>Evolução dos modelos.</figcaption>
+</figure>
+</div>
+</section>
+<section id="basecallers-4" class="slide level2">
+<h2>Basecallers</h2>
+<p>Sugestão de leitura:</p>
+<ul>
+<li><em>“<strong>From squiggle to basepair: computational approaches for improving nanopore sequencing read accuracy</strong>”</em> <span class="citation" data-cites="rang2018">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Rang, Kloosterman, e Ridder 2018</a>)</span>[<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-018-1462-9">link</a>]</li>
+</ul>
+</section>
+<section id="bancada" class="slide level2">
+<h2>Bancada</h2>
+<div class="fragment">
+<ul>
+<li>hmwDNA;</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Alta pureza;</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Não há necessidade de PCR;</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Não há necessidade conversões por bissulfito de sódio (e afins);</li>
+</ul>
+</div>
+</section>
+<section id="bancada---extração" class="slide level2">
+<h2>Bancada - Extração</h2>
+<ul>
+<li>Parte crucial!</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Vale o investimento;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Vários kits de extração já foram validados pela comunidade;</li>
+</ul>
+</section>
+<section id="bancada---controle-de-qualidade" class="slide level2">
+<h2>Bancada - Controle de qualidade</h2>
+<p><img data-src="img/dna_qc.png" width="1200"></p>
+
+<aside><div>
+<p>Agilent Femto Pulse (for fragments &gt;10 kb), or the Agilent Bioanalyzer (for fragments &lt;10 kb)</p>
+</div></aside></section>
+<section id="enriquecimento-do-sequenciamento" class="slide level2">
+<h2>Enriquecimento do sequenciamento</h2>
+<ul>
+<li>Você não precisa sequenciar o genoma completo necessariamente!</li>
+</ul>
+<div class="fragment">
+<div style="text-align: center;">
+<iframe src="https://giphy.com/embed/XR9Dp54ZC4dji" width="480" height="288" style="" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+<p>
+<a href="https://giphy.com/gifs/mrw-thanks-server-XR9Dp54ZC4dji">via GIPHY</a>
+</p>
+</div>
+</div>
+</section>
+<section id="enriquecimento-do-sequenciamento-1" class="slide level2">
+<h2>Enriquecimento do sequenciamento</h2>
+<div class="fragment">
+<ul>
+<li><strong><em>Target</em></strong>;</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong><em>CRISPR-Cas9</em></strong>;</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><strong><em>Adaptive sampling</em></strong>;</li>
+</ul>
+</div>
+</section>
+<section id="enriquecimento-do-sequenciamento-2" class="slide level2">
+<h2>Enriquecimento do sequenciamento</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S1872497324001522"><img data-src="img/enrichment3.png" class="quarto-figure quarto-figure-center" width="1200"></a></p>
+</figure>
+</div>
+<figcaption>Estratégias de enriquecimento de ONT</figcaption>
+</figure>
+</div>
+</section>
+<section id="crispr-cas9" class="slide level2">
+<h2>CRISPR-Cas9</h2>
+
+<img data-src="img/a.storyblok.webp" width="950" class="r-stretch quarto-figure-center"><p class="caption">https://nanoporetech.com/document/targeted-amplification-free-dna-sequencing-using-crispr-cas</p></section>
+<section id="crispr-cas9-1" class="slide level2">
+<h2>CRISPR-Cas9</h2>
+<ul>
+<li><p><strong>Excision</strong>;</p></li>
+<li><p><strong>Single cut and read out;</strong></p></li>
+<li><p><strong>Tiling;</strong></p></li>
+</ul>
+</section>
+<section id="crispr-cas9-2" class="slide level2">
+<h2>CRISPR-Cas9</h2>
+
+<img data-src="img/cas9_types.webp" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="crispr-cas9-3" class="slide level2">
+<h2>CRISPR-Cas9</h2>
+
+<img data-src="img/cas9_choose.webp" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="crispr-cas9-4" class="slide level2">
+<h2>CRISPR-Cas9</h2>
+
+<img data-src="img/chopchop.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="adaptive-sampling" class="slide level2">
+<h2>Adaptive sampling</h2>
+
+<img data-src="img/1000x0.webp" width="1200" class="r-stretch quarto-figure-center"><p class="caption">https://nanoporetech.com/document/adaptive-sampling</p></section>
+<section id="adaptive-sampling-1" class="slide level2">
+<h2>Adaptive sampling</h2>
+<ul>
+<li><p>Enriquecimento das ROI ~5 a 10 vezes;</p></li>
+<li><p>Ideal é que a fração enriquecida seja inferior 10% do genoma (320 Mb);</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Cuidados: <strong><em>Ocupação dos poros</em></strong> e <strong><em>fragmentação da biblioteca</em></strong>;</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>As regiões escolhidas são colocadas em um arquivo BED;</p></li>
+<li><p>É necessário um computador com maior capacidade;</p></li>
+</ul>
+</div>
+</section>
+<section id="potencial" class="slide level2">
+<h2>Potencial</h2>
+</section>
+<section id="potencial---montagem-de-genomas" class="slide level2">
+<h2>Potencial - montagem de genomas</h2>
+
+<img data-src="img/montagemdegenomas.png" width="1000" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://www.phgfoundation.org/briefing/clinical-long-read-sequencing" class="uri">https://www.phgfoundation.org/briefing/clinical-long-read-sequencing</a></p></section>
+<section id="potencial---montagem-de-genomas-1" class="slide level2">
+<h2>Potencial - montagem de genomas</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.science.org/doi/10.1126/science.abj6987"><img data-src="img/completehumangenome.png" class="quarto-figure quarto-figure-center" width="596"></a></p>
+</figure>
+</div>
+<figcaption>Montagem completa do genoma humano.</figcaption>
+</figure>
+</div>
+
+<aside><div>
+<p><span class="citation" data-cites="nurk2022">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Nurk et al. 2022</a>)</span></p>
+</div></aside></section>
+<section id="potencial---montagem-de-genomas-2" class="slide level2">
+<h2>Potencial - montagem de genomas</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.science.org/cms/10.1126/science.abj6987/asset/ec796ff1-289e-43cf-a065-ec6573199a8d/assets/images/large/science.abj6987-f1.jpg"><img data-src="img/completehumangenome_2.png" class="quarto-figure quarto-figure-center" width="393"></a></p>
+</figure>
+</div>
+<figcaption>Aumento de bases no genoma.</figcaption>
+</figure>
+</div>
+</section>
+<section id="potencial---haplótipos-longos" class="slide level2">
+<h2>Potencial - haplótipos longos</h2>
+
+<img data-src="img/longhap.png" width="1200" class="r-stretch quarto-figure-center"><p class="caption">Determinar haplótipos longos</p></section>
+<section id="potencial---haplótipos-longos-1" class="slide level2">
+<h2>Potencial - haplótipos longos</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.nature.com/articles/s41467-024-47349-7/figures/4"><img data-src="img/pecat.webp" class="quarto-figure quarto-figure-center" width="797"></a></p>
+</figure>
+</div>
+<figcaption>Haplótipos do pai e da mãe.</figcaption>
+</figure>
+</div>
+</section>
+<section id="potencial---variantes-estruturais" class="slide level2">
+<h2>Potencial - Variantes estruturais</h2>
+</section>
+<section id="potencial---metilação" class="slide level2">
+<h2>Potencial - metilação</h2>
+
+<img data-src="img/hapmet.png" width="500" class="r-stretch quarto-figure-center"><p class="caption">Metilação ao longo do gene MYEF2.</p></section>
+<section id="potencial---outros" class="slide level2">
+<h2>Potencial - outros</h2>
+<ul>
+<li>STR <span class="citation" data-cites="luo2024">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Luo et al. 2024</a>)</span>;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Elementos transponíveis <span class="citation" data-cites="smits2022">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Smits e Faulkner 2022</a>)</span>;</li>
+</ul>
+<p><br></p>
+<ul>
+<li>Epitranscriptômica <span class="citation" data-cites="Workman2019 Begik2022 Jain2022">(<a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Workman et al. 2019</a>; <a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Begik, Mattick, e Novoa 2022</a>; <a href="#/que-tipo-de-computador-usar" role="doc-biblioref" onclick="">Jain et al. 2022</a>)</span>;</li>
+</ul>
+</section>
+<section id="estado-atual" class="slide level2">
+<h2>Estado atual</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://nanoporetech.com/platform/accuracy"><img data-src="https://a.storyblok.com/f/196663/10800x3600/86aa012b7e/20250613_dna_q-1.png" class="quarto-figure quarto-figure-center" width="1200"></a></p>
+</figure>
+</div>
+<figcaption>Sequenciamento de DNA</figcaption>
+</figure>
+</div>
+<p><span class="math display">\[
+P = 10^{\frac{-Q}{10}}
+\]</span></p>
+</section>
+<section id="estado-atual-1" class="slide level2">
+<h2>Estado atual</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://nanoporetech.com/platform/accuracy"><img data-src="https://a.storyblok.com/f/196663/1158x952/4cc71d5637/base-modification-section-graph_mod.jpg" class="quarto-figure quarto-figure-center" width="608"></a></p>
+</figure>
+</div>
+<figcaption>Metilação.</figcaption>
+</figure>
+</div>
+</section>
+<section id="epi2me" class="slide level2">
+<h2>EPI2ME</h2>
+<div style="text-align: center;">
+<blockquote>
+<p>Quem tem medo de programação?</p>
+</blockquote>
+<iframe src="https://giphy.com/embed/Df1O9eIsMFASA" width="480" height="324" style="" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+<p><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a></p><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a></div><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a></section><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a><section id="epi2me-1" class="slide level2"><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+<h2>EPI2ME</h2>
+</a><div class="columns"><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a><div class="column" style="width:50%;"><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a><ul><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a="">
+</a><li><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a=""></a><p><a href="https://giphy.com/gifs/punch-monitor-Df1O9eIsMFASA" via="" giphy<="" a=""></a><a href="https://epi2me.nanoporetech.com/wfindex/">EPI2ME</a> é uma coleção de pipelines fornecidos pela própria ONT;</p></li>
+<li><p>Nextflow;</p></li>
+<li><p>Útil para quem quer ou não programar;</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://epi2me.nanoporetech.com/wfindex/"><img data-src="https://epi2me.nanoporetech.com/static/dbb47454a74ffdac6ab079de768cc8af/3421a/logo-dark.webp" class="quarto-figure quarto-figure-center" width="450"></a></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="futuro-da-tecnologia" class="slide level2">
+<h2>Futuro da tecnologia</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://www.nature.com/articles/s41587-025-02587-y#citeas"><img data-src="img/protein.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<figcaption>Lu, C., Bonini, A., Viel, J.H. et al.&nbsp;Toward single-molecule protein sequencing using nanopores. Nat Biotechnol 43, 312–322 (2025). https://doi.org/10.1038/s41587-025-02587-y</figcaption>
+</figure>
+</div>
+</section>
+<section id="futuro-da-tecnologia-1" class="slide level2">
+<h2>Futuro da tecnologia</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><a href="https://comics.dcv.fct.unl.pt/resources/"><img data-src="img/multiomics.png" class="quarto-figure quarto-figure-center"></a></p>
+</figure>
+</div>
+<figcaption>https://comics.dcv.fct.unl.pt/resources/</figcaption>
+</figure>
+</div>
+</section>
+<section id="desafios-e-frustrações.." class="slide level2">
+<h2>Desafios (e frustrações)..</h2>
+<div style="text-align: center;">
+<iframe src="https://giphy.com/embed/2zdVnqmhSfAvyQhzHj" width="480" height="480" style="" frameborder="0" class="giphy-embed" allowfullscreen="">
+</iframe>
+<p><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+</a></p><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+</a></div><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+</a></section><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+</a><section id="desafios-e-frustrações..-1" class="slide level2"><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+<h2>Desafios (e frustrações)..</h2>
+</a><div class="quarto-figure quarto-figure-center"><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+</a><figure><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a="">
+</a><p><a href="https://giphy.com/gifs/showtime-season-4-episode-2zdVnqmhSfAvyQhzHj" via="" giphy<="" a=""></a><a href="https://github.com/rrwick"><img data-src="https://avatars.githubusercontent.com/u/7053555?v=4.png" width="418"></a></p>
+<figcaption>Ryan Wick</figcaption>
+</figure>
+</div>
+<p>“May 2025 update</p>
+<p>I’ve recently heard that ONT is deprecating duplex basecalling – not surprising given their recent silence on the topic. This is now the third time (after 2D and 1D2) that ONT has tried and dropped both-strand basecalling! So it seems that mixed simplex-duplex read sets like the ones in this post will end up a historical curiosity rather than a standard part of ONT sequencing.” [<a href="https://rrwick.github.io/2024/05/08/duplex_assemblies.html">link</a>]</p>
+</section>
+<section id="o-que-eu-preciso-saber-para-começar" class="slide level2">
+<h2>O que eu preciso saber para começar?</h2>
+</section>
+<section id="quais-os-principais-custos" class="slide level2">
+<h2>Quais os principais custos?</h2>
+</section>
+<section id="que-tipo-de-computador-usar" class="slide level2 smaller scrollable">
+<h2>Que tipo de computador usar?</h2>
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Begik2022" class="csl-entry" role="listitem">
+Begik, Oguzhan, John S. Mattick, e Eva Maria Novoa. 2022. <span>“Exploring the Epitranscriptome by Native RNA Sequencing”</span>. <em>RNA</em> 28 (11): 1430–39. <a href="https://doi.org/10.1261/rna.079404.122">https://doi.org/10.1261/rna.079404.122</a>.
+</div>
+<div id="ref-Jain2022" class="csl-entry" role="listitem">
+Jain, Miten, Robin Abu-Shumays, Hugh E. Olsen, e Mark Akeson. 2022. <span>“Advances in Nanopore Direct RNA Sequencing”</span>. <em>Nature Methods</em> 19 (10): 1160–64. <a href="https://doi.org/10.1038/s41592-022-01633-w">https://doi.org/10.1038/s41592-022-01633-w</a>.
+</div>
+<div id="ref-Lu2025" class="csl-entry" role="listitem">
+Lu, Chunzhe, Andrea Bonini, Jakob H. Viel, e Giovanni Maglia. 2025. <span>“Toward Single-Molecule Protein Sequencing Using Nanopores”</span>. <em>Nature Biotechnology</em> 43 (3): 312–22. <a href="https://doi.org/10.1038/s41587-025-02587-y">https://doi.org/10.1038/s41587-025-02587-y</a>.
+</div>
+<div id="ref-luo2024" class="csl-entry" role="listitem">
+Luo, Yuan, Jiarong Zhang, Ming Ni, Zhusong Mei, Qiao Ye, Bingqian Guo, Longmei Fang, et al. 2024. <span>“Pilot Validation of on<span>-</span>Field STR Typing and Human Identity Testing by MinION Nanopore Sequencing”</span>. <em>ELECTROPHORESIS</em> 45 (9-10): 885–96. <a href="https://doi.org/10.1002/elps.202300234">https://doi.org/10.1002/elps.202300234</a>.
+</div>
+<div id="ref-nurk2022" class="csl-entry" role="listitem">
+Nurk, Sergey, Sergey Koren, Arang Rhie, Mikko Rautiainen, Andrey V. Bzikadze, Alla Mikheenko, Mitchell R. Vollger, et al. 2022. <span>“The Complete Sequence of a Human Genome”</span>. <em>Science</em> 376 (6588): 44–53. <a href="https://doi.org/10.1126/science.abj6987">https://doi.org/10.1126/science.abj6987</a>.
+</div>
+<div id="ref-rang2018" class="csl-entry" role="listitem">
+Rang, Franka J., Wigard P. Kloosterman, e Jeroen de Ridder. 2018. <span>“From Squiggle to Basepair: Computational Approaches for Improving Nanopore Sequencing Read Accuracy”</span>. <em>Genome Biology</em> 19 (1). <a href="https://doi.org/10.1186/s13059-018-1462-9">https://doi.org/10.1186/s13059-018-1462-9</a>.
+</div>
+<div id="ref-smits2022" class="csl-entry" role="listitem">
+Smits, Nathan, e Geoffrey J. Faulkner. 2022. <span>“Nanopore Sequencing to Identify Transposable Element Insertions and Their Epigenetic Modifications”</span>. Em, 151–71. Springer US. <a href="https://doi.org/10.1007/978-1-0716-2883-6_9">https://doi.org/10.1007/978-1-0716-2883-6_9</a>.
+</div>
+<div id="ref-wang2021" class="csl-entry" role="listitem">
+Wang, Yunhao, Yue Zhao, Audrey Bollas, Yuru Wang, e Kin Fai Au. 2021. <span>“Nanopore Sequencing Technology, Bioinformatics and Applications”</span>. <em>Nature Biotechnology</em> 39 (11): 1348–65. <a href="https://doi.org/10.1038/s41587-021-01108-x">https://doi.org/10.1038/s41587-021-01108-x</a>.
+</div>
+<div id="ref-Workman2019" class="csl-entry" role="listitem">
+Workman, Rachael E., Alison D. Tang, Paul S. Tang, Miten Jain, John R. Tyson, Roham Razaghi, Philip C. Zuzarte, et al. 2019. <span>“Nanopore Native RNA Sequencing of a Human Poly(A) Transcriptome”</span>. <em>Nature Methods</em> 16 (12): 1297–1305. <a href="https://doi.org/10.1038/s41592-019-0617-2">https://doi.org/10.1038/s41592-019-0617-2</a>.
+</div>
 </div>
 </section></section>
     </div>
